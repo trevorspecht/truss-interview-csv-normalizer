@@ -13,6 +13,22 @@
   return ms
 }
 
+/**
+ * @function uniCop
+ * @param {string} string - string to check for invalid Unicode characters
+ * @returns {number} - 1 if unicode replacement character is found, otherwise 0
+ */
+const uniCop = (string) => {
+
+  for (let codePoint of string) {
+    if (codePoint.codePointAt(0).toString(16) === 'fffd') {
+      return 1
+    }
+  }
+  return 0
+}
+
 module.exports = {
-  getMs
+  getMs,
+  uniCop
 }

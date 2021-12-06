@@ -1,0 +1,24 @@
+{
+  "name": "truss-interview-csv-normalizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorspecht/truss-interview-csv-normalizer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevorspecht/truss-interview-csv-normalizer/issues"
+  },
+  "homepage": "https://github.com/trevorspecht/truss-interview-csv-normalizer#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "json-2-csv": "^3.14.4",
+    "luxon": "^2.1.1"
+  }
+}

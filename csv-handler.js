@@ -5,6 +5,7 @@ const converter = require('json-2-csv')
 const { DateTime } = require('luxon')
 const fs = require('fs');
 
+const helper = require('./helper-functions')
 
 /**
  * @function csvHandler
@@ -40,9 +41,11 @@ const csvHandler = (inputFile, outputFile) => {
         return value.toUpperCase().normalize()
       }
       if (header === 'FooDuration') {
+        fooDur = helper.getMs(value)
         return fooDur
       }
       if (header === 'BarDuration') {
+        barDur = helper.getMs(value)
         return barDur
       }
       if (header === 'TotalDuration') {
